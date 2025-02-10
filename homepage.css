@@ -29,9 +29,26 @@ body{
     font-size: 24px;
     border-radius: 10px;
     background-color: white;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
 }
 
 #register_btn{
+    background-color: black;
+    color: white;
+}
+
+#register_btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#login_btn{
+    background-color: white;
+    color: black;
+}
+
+#login_btn:hover{
     background-color: black;
     color: white;
 }
