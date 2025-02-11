@@ -1,7 +1,8 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 .PageHead {
     display: grid;
     width: 100%;
@@ -19,23 +20,25 @@ body{
     font-weight: 400;
     font-size: 24px;
 }
-.PageHead_list li{
+
+.PageHead_list li {
     position: relative;
+    cursor: pointer;
 }
 
-.PageHead_list li::after{
+.PageHead_list li::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px; 
-    background-color: #000; 
-    transition: width 0.3s ease; 
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
 }
 
-.PageHead_list li:hover::after{
-    width: 100%; 
+.PageHead_list li:hover::after {
+    width: 100%;
 }
 
 .PageHead button {
@@ -51,27 +54,33 @@ body{
     cursor: pointer;
 }
 
-#register_btn{
+#register_btn {
     background-color: black;
     color: white;
 }
 
-#register_btn:hover{
+#register_btn:hover {
     background-color: white;
     color: black;
 }
 
-#login_btn{
+#login_btn {
     background-color: white;
     color: black;
 }
 
-#login_btn:hover{
+#login_btn:hover {
     background-color: black;
     color: white;
 }
 
-.homepage_slogan{
+#landing {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    align-items: center;
+}
+
+.homepage_slogan {
     width: 525px;
     position: end;
     line-height: 1.4;
@@ -80,10 +89,23 @@ body{
 
 }
 
-.homepage_slogan h1{
+.homepage_slogan h1 {
     font-size: 48px;
 }
 
-.homepage_slogan p{
+.homepage_slogan p {
     font-size: 20px;
+}
+
+#mission{
+    margin: 30px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#mission h2{
+    font-size:40px;
+}
+#mission p{
+    font-size:20px;
 }
