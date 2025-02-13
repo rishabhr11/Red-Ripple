@@ -18,7 +18,7 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .PageHead_list li {
@@ -42,12 +42,12 @@ body {
 }
 
 .PageHead button {
-    width: 140px;
-    height: 70px;
+    width: 120px;
+    height: 60px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 10px;
     background-color: white;
     transition: all 0.3s ease-out;
@@ -91,6 +91,7 @@ body {
 
 .homepage_slogan h1 {
     font-size: 48px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 }
 
 .homepage_slogan p {
@@ -98,17 +99,22 @@ body {
 }
 
 #mission{
-    margin: 30px;
+    margin: 100px 30px;
     padding: 20px 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
 
 #mission h2{
-    font-size:40px;
+    font-size: 40px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-weight: 600;
 }
+
 #mission p{
     font-size:20px;
 }
+<<<<<<< HEAD
 #foot{
     margin-top: 50px;
 }
@@ -116,4 +122,10 @@ body {
     margin: 50px;
 }
 
+=======
+
+#carouselExampleCaptions{
+    width: 90%;
+}
+>>>>>>> 1fe3a6b5b0407d4dab485fc246198b0818fe2eeb
 
