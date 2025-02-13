@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Date Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .checkbox-label {
+      font-size: 18px;
+      color: #333;
+    }
+
+    #donationDate {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4CAF50; /* Green color */
+      margin-top: 20px;
+      display: none; /* Initially hidden */
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Checkbox and Label -->
+    <label class="checkbox-label" for="donationCheckbox">
+      <input type="checkbox" id="donationCheckbox"> I want to donate
+    </label>
+
+    <!-- Donation Date Display -->
+    <p id="donationDate"></p>
+  </div>
+
+  <script>
+    // Get the checkbox and donation date display elements
+    const checkbox = document.getElementById('donationCheckbox');
+    const donationDate = document.getElementById('donationDate');
+
+    // Add event listener to checkbox
+    checkbox.addEventListener('change', function() {
+      if (checkbox.checked) {
+        // When checkbox is checked, show the current date
+        const currentDate = new Date().toLocaleDateString();
+        donationDate.textContent = `Donation Date: ${currentDate}`;
+        donationDate.style.display = 'block'; // Make the donation date visible
+      } else {
+        // When checkbox is unchecked, hide the donation date
+        donationDate.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
