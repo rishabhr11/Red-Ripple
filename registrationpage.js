@@ -18,6 +18,6 @@ checkbox.addEventListener('change', function() {
 // Add event listener to date picker
 datePicker.addEventListener('change', function() {
   const selectedDate = new Date(datePicker.value).toLocaleDateString();
-  donationDate.textContent = `Selected Donation Date: ${selectedDate}`;
+  donationDate.textContent = (`Last Donation: ${selectedDate}`);
   donationDate.style.display = 'block'; // Show the donation date text
 });
