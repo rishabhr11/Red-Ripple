@@ -125,4 +125,21 @@ body {
 #carouselExampleCaptions{
     width: 90%;
 }
-
+.footstuff{
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: #1E2833;
+}
+.footstuff>div>h4{
+    margin-bottom: 15px;
+}
+.toalign{
+    padding-left: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#footd{
+    display: flex;
+    justify-content: space-around;
+}
