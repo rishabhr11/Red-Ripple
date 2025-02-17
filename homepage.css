@@ -135,11 +135,16 @@ body {
     margin-bottom: 15px;
 }
 .toalign{
-    padding-left: 700px;
+    padding-left: 900px;
     display: flex;
     justify-content: space-evenly;
 }
 #footd{
+    padding: 100px;
+    padding-bottom: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+#footanchor>a{
+    margin: 7px;
 }
