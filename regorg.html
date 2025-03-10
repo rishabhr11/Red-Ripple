@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regorg.css">
+</head>
+<body>
+    <header>
+        <div class="PageHead">
+            <div>
+              <img src="./assets/images/stock-vector--modern-blood-donor-ripple-effect-drop-1515881030-removebg-preview.png" height="150px" alt="">
+            </div>
+            <div style="justify-items: end; align-content: center;">
+                <ul class="PageHead_list">
+                    <li onclick="nav_generate('home')">Home</li>
+                    <li onclick="nav_generate('about')">About Us</li>
+                    <li onclick="nav_generate('get')">Get Blood</li>
+                    <li onclick="nav_generate('donate')">Donate Blood</li>
+                    <button id="login_btn" onclick="nav_generate('login')">Login</button>
+                    <button id="register_btn" onclick="nav_generate('register')">Register</button>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="regmain">
+            <div class="regorg" >
+                <div id="details">
+                    <form >
+                        <div>
+                            <p >Register As Organization</p>
+                        </div>
+                        <div>
+                            <label for="name">Organization name</label>
+                            <input type="text" id="name" placeholder="name">
+                        </div>
+                        <div>
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="enter here">
+                        </div>
+                        <div>
+                            <label for="head">Head Of Organization</label>
+                            <input type="text" id="head">
+                        </div>
+                        <div>
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" placeholder="+91">
+
+                        </div>
+                        <div id="sumbitbutt">
+                            <button type="submit" id="submitbutton">submit</button>
+                        </div>
+                        
+                    </form> 
+                </div>       
+                <div id="redbox">
+                </div>
+
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>   
