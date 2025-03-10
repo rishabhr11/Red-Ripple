@@ -95,6 +95,7 @@ body {
     order: 2;
     width: 600px;
     padding-top: 40px; 
+    
 }
 
 #redbox {
@@ -133,7 +134,7 @@ input {
     margin-bottom: 20px; 
     border-radius: 10px;
     width: 100%; 
-    max-width: 350px; 
+    max-width: 550px; 
     height: 40px; 
     font-size: 20px;
     font-family: 'Roboto';
@@ -144,6 +145,7 @@ input {
 }
 
 #sumbitbutt {
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -164,11 +166,26 @@ input {
 }
 
 #submitbutton:hover {
-    background-color: #333; 
+    background-color: #333;
+    color: white; 
 }
 
 #address {
+
+    width: 350px;
     height: 100px;
 }
-
-    
+#name{
+    width: 70%;
+}
+#phone{
+    width: 55%;
+}
+#addr{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}   
+#para{
+    padding-bottom: 40px;
+}
