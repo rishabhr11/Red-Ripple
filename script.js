@@ -5,4 +5,7 @@ function nav_generate(input){
     else if(input == 'register'){
         window.location.href = "./registrationpage.html"
     }
+    else if(input == 'Get Blood'){
+        window.location.href = "./regrec.html"
+    }
 }

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.PageHead {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 4fr;
+}
+
+.PageHead_list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.PageHead_list li {
+    position: relative;
+    cursor: pointer;
+}
+
+.PageHead_list li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.PageHead_list li:hover::after {
+    width: 100%;
+}
+
+.PageHead button {
+    width: 120px;
+    height: 60px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+#register_btn {
+    background-color: black;
+    color: white;
+}
+
+#register_btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#login_btn {
+    background-color: white;
+    color: black;
+}
+
+#login_btn:hover {
+    background-color: black;
+    color: white;
+}
+.otpmain{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.otpdets{
+    padding: 20px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding-top: 70px;
+    padding: 70px;
+    width: 600px;
+    /* height: 350px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+input{
+    width: 30px;
+    height: 30px;
+}
+#butt{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+#butt:hover{
+    background-color: white;
+    color: black;
+}
+h1{
+    /* OTP Verification */
+width: 282px;
+height: 49px;
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+
+color: #000000;
+
+
+}
